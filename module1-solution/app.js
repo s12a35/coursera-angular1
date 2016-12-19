@@ -24,7 +24,7 @@
             var al = $scope.lunchstr.split(',');
             var counter = 0;
             for (var i=0; i<al.length; i++){
-                if(al[i]!= ""){
+                if(/\S/.test(al[i])){
                     counter++;
                 }
             }
